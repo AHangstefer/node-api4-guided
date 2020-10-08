@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"scripts": {
-		"watch": "nodemon index.js",
+		"watch": "nodemon --require dotenv/config index.js",
 		"start": "node index.js"
 	},
 	"devDependencies": {
@@ -16,3 +16,8 @@
 		"sqlite3": "^5.0.0"
 	}
 }
+
+//npm run watch 
+//npm install dotenv --save-dev 
+//rewrote watch: requre after intalling dotenv >>>
+//"watch": "cross-env COHORT=webpt18 nodemon index.js",
